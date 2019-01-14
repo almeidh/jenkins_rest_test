@@ -7,12 +7,12 @@ pipeline {
         stage('Jenkins REST') {
             steps {
                 script {
-                    def response = sh(returnStdout: true, script: "curl -s  -H \"Authorization: Basic dXNlcjphZG1pbg==\" -H \"Accept: application/json\" -X GET ${fetchUrl}").trim()
-                    def jsonSlurper = new JsonSlurper()
-                    def object = jsonSlurper.parseText("${response}")
-                    def version = object.displayName
+                    // def response = sh(returnStdout: true, script: "curl -s  -H \"Authorization: Basic dXNlcjphZG1pbg==\" -H \"Accept: application/json\" -X GET ${fetchUrl}").trim()
+                    // def jsonSlurper = new JsonSlurper()
+                    // def object = jsonSlurper.parseText("${response}")
+                    // def version = object.displayName
                     echo 'printing..'
-                    echo version
+                    // echo version
                 }
             }
         }
