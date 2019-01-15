@@ -1,5 +1,5 @@
 import groovy.json.JsonSlurper
-def fetchUrl = 'http://192.168.1.32:8080/view/all/job/jenkins%20rest%20api%20test/job/master/lastSuccessfulBuild/api/json'
+def fetchUrl = 'http://192.168.1.11:8080/view/all/job/jenkins%20rest%20api%20test/job/master/lastSuccessfulBuild/api/json'
 
 pipeline {
     agent any 
